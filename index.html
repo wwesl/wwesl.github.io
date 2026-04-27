@@ -1,66 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>MEU PRIMEIRO HTML</title>
-    
-    <meta name="theme-color" content="#FF0060">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="My Awesome Project Title">
-    <meta property="og:site_name" content="kori's Cool Stuff">
-    <meta property="og:url" content="https://wwesl.github.io/wwesl.github.io/">
-    
-    <meta property="og:description" content="
-        # :yv_xheart: ~ SERVER RULES ~ <a:TheFishShaker1:1005637605905403934><a:TheFishShaker2:1005637448237330474>
-        ">
-    <meta property="og:image" content="https://pbs.twimg.com/media/HCoBiwDbsAE5llI.jpg">
-    <meta property="og:image:alt" content="Cool preview image">
-    
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Koriis Toyhouse</title>
+
+	<script src="https://kit.fontawesome.com/cc7ef3d06d.js" crossorigin="anonymous"></script>
+	<style>
+		body {
+			scroll-behavior: smooth;
+			color: #efe;
+			max-width: 800px;
+			background: fixed center no-repeat url(https://f2.toyhou.se/file/f2-toyhou-se/images/89221887_IWUx3jVDk9DDCJp.png);
+			background-size: cover;
+			/* overflow: hidden; */
+			font-size: 14px;
+			font-family: monospace;
+		}
+
+		header {
+			font-size: 50px;
+			font-family: monospace;
+			color: #f06;
+		}
+
+		header, .frame {
+			background: linear-gradient(#0993, #0237, #f036);
+			border-radius: 6px;
+			box-shadow: 0px 5px 12px #0008;
+			outline-style: solid;
+			outline-width: 2px;
+			outline-color: #ccc;
+			outline-offset: 2px;
+			padding: 4% 1% 4% 3%;
+			margin: 10% 0px 10% 20px;
+		}
+
+		.oc {
+			font-size: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 12px;
+		}
+		
+		#profile-basic-info {
+			display: flex;
+			align-items: center;
+			gap: 25px;
+		}
+	</style>
 </head>
 
 <body>
-    <header>
-        <h1>
-            KORALE PROJECTS
-        </h1>
-        <p>
-            This website is where I will organize and show my projects and their statuses.
-            <br><i><b>Korale</b> is a fictional company, it is not real and does not have a legal registry. </i>
-        </p>
-    </header>
+	<header>
+		<section name="basic profile details" id="profile-basic-info">
+			<img style="border-radius: 100%;" src="https://f2.toyhou.se/file/f2-toyhou-se/users/Korii1" alt="Profile Picture" width="22%">
+			
+			<div>
+				<b>Korii1</b>
+				<i class="fa-solid fa-fish-fins pull-right"></i>
+	
+				<hr style="border-color: #f8b; border-width: 2px;">
+	
+				<div style="font-size:12px; color: #efe;">
+					female | she/her | ISFP-T | autistic
+				</div>
+			</div>
 
-    <hr>
-    <main>
-        <section id="about-me">
-            <h2>ABOUT ME</h2>
-            <p>
-                Hello I'm Korii, I am 19 years old and a Computer Science student.
-                <br>
-                I am in the first few months of college, but this website will grow over time
-                as I make my journey through the course.
-                <br>
-                <br>↪ 🌙 4 years of coding in LuaU
-                <br>↪ 🧾 1 year of coding in C#
-                <br>↪ 🎨 6 years of Digital Art
-            </p>
-        </section>
-    
-        <div id="projects">
-            <h2>PERSONAL PROJECTS</h2>
-            <details>
-                <summary>Project 1 (PLACEHOLDER)</summary>
-                <article>
-                    Sorry, this is currently empty :(
-                </article>
-            </details>
-        </div>
-    </main>
+			<p style="font-size:14px; color:#efe;">
+				<i class="fa-solid fa-anchor pull-left" style="font-size: 12px"></i>
+				i love aquatic things<br>
+				<i class="fa-solid fa-anchor pull-left" style="font-size: 12px"></i>
+				hobbies:<br>
+				. programming (LuaU, HTML & CSS, C#)<br>
+				. 2D art<br>
+				. 2D animating<br>
+				. gaming
+			</p>
+		</section>
+	</header>
+	
+	<section name="main characters" class="frame">
+		<b style="font-size: 30px; color: #f06;">main characters</b>
+		<i style="font-size: 35px; color: #f06;" class="fa-solid fa-paw pull-right"></i>
+		<br><br>
+		<div style="display: flex;">
+			<div class="oc">
+				<a href="https://toyhou.se/27846674.korii">
+					<img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/27846674?1718820864" alt="Korii" style="border-radius: 100%; width: 150px;">
+				</a>
+				<i>Korii🐟</i>
+			</div>
+			<div class="oc">
+				<a href="https://toyhou.se/27846535.ren">
+					<img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/27846535?1718820225" alt="Korii" style="border-radius: 100%; width: 150px;">
+				</a>
+				<i>Ren🍗</i>
+			</div>
+		</div>
+	</section>
 
-    <hr>
-    <footer>
-        <mark> 🚧 Under Development 🚧 </mark>
-        <br>Developed by @ko5i on Discord • Computer Science Project
-    </footer>
+	<section name="about me" class="frame">
+		<b style="font-size: 30px; color: #f06;">about me</b>
+		<i style="font-size: 35px; color: #f06;" class="fa-solid fa-star pull-right"></i>
+		<p>
+			Hello I'm Korii, I am 19 years old and a Computer Science student.
+			I am in the first few months of college, but this website will grow over time as I make my journey through the course.
+
+			↪ 🌙 4 years of coding in LuaU
+			↪ 🧾 1 year of coding in C#
+			↪ 🎨 6 years of Digital Art
+		</p>
+	</section>
+
+	<section name="links" class="frame">
+		<b style="font-size: 30px; color: #f06;">links</b>
+		<i style="font-size: 35px; color: #f06;" class="fa-solid fa-paperclip pull-right"></i>
+		<hr style="border-color: #f8b; border-width: 2px;">
+		Commissions: <a href="undefined" style="color: #f8b;">CLOSED</a>
+		<hr style="border-color: #f8b; border-width: 2px;">
+		Trades: <a href="undefined" style="color: #f8b;">CLOSED</a>
+		<hr style="border-color: #f8b; border-width: 2px;">
+		<div style="font-size: 25px;">
+			<a href="https://discord.com/invite/r2anPZv3GF" style="color: #ff70a8"><i class="fab fa-discord tooltipster" title="Discord Server"></i></a>
+			<a href="https://artfight.net/~Korii1" style="color: #ff70a8"><i class="fas fa-paintbrush tooltipster" title="Artfight"></i></a>
+			<a href="https://twitter.com/K0rii1" style="color: #ff70a8"><i class="fab fa-twitter tooltipster" title="Twitter"></i></a>
+			<a href="https://youtube.com/@Korii_01" style="color: #ff70a8"><i class="fab fa-youtube tooltipster" title="Youtube"></i></a>
+			<a href="https://ko-fi.com/Korii1" style="color: #ff70a8"><i class="fas fa-mug-hot" title="Ko-fi"></i></a>
+		</div>
+	</section>
+
+	<section name="credits">
+		<!-- <a href="/Prismicodes" class="mt-2 btn btn-primary tooltipster" title="HTML by Prismicodes" style="background-color: #3e0025; color: #ff70a8; border-color: #952055; border-width: 4px; border-radius: 2rem; box-shadow: 0 5px 10px #000; "><i class="fas fa-code"></i> Code</a> -->
+		<a href="https://img.freepik.com/premium-photo/beautiful-sea-deep-ocean-underwater-with-coral-reef-as-background_887552-22895.jpg" title="Background Credit" style="background-color: #3e0025; color: #ff70a8; margin: 5px; padding: 3px;">
+			<i class="fas fa-image"></i>
+			background
+		</a>
+        <span>• Developed by @ko5i on Discord • Computer Science Project</span>
+		<br><br><b>🚧 Under Development 🚧</b>
+	</section>
+
+	<!-- <div class="col-0 m-2 m-auto" title="this is unfinished lol" style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/thumbnails/89224053_I6L.png); background-size: cover; background-position: owo; height: 250px; width: 200px; box-shadow: 0 0 10px #000"></div> -->
 </body>
 
 </html>
