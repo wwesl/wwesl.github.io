@@ -6,19 +6,13 @@ html {
 
 body {
     scroll-behavior: smooth;
-    color: #efe;
+    color: #fde;
     max-width: 90vw;
     background: fixed center no-repeat url(https://f2.toyhou.se/file/f2-toyhou-se/images/89221887_IWUx3jVDk9DDCJp.png);
     background-size: cover;
     /* overflow: hidden; */
-    font-size: 5vw;
+    font-size: 1.6vw;
     font-family: monospace;
-}
-
-header {
-    font-size: 5.5vw;
-    font-family: monospace;
-    color: #f06;
 }
 
 header, .frame {
@@ -29,32 +23,44 @@ header, .frame {
     outline-width: 2px;
     outline-color: #ccc;
     outline-offset: 2px;
-    padding: 4% 1% 4% 3%;
-    margin: 10% 0px 10% 20px;
+    padding: 2vw 1vw 2vw 3vw;
+    margin: 2vw 2vw 10vw 2vw;
+}
+
+.title {
+    font-size: 4vw;
+    font-family: monospace;
+    color: #f06;
+    background: linear-gradient(#000a #0000);
+    background-size: cover;
+
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
 }
 
 .oc {
-    font-size: 20px;
+    font-size: 2.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 12px;
-}
-
-.credit{
-    background-color: #3e0025;
-    color: #ff70a8;
-    margin: 4px;
-    padding: 5px;
-    border-radius: 8px;
+    margin: 2vw;
 }
 
 #profile-basic-info {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 2vw;
 }
 
 .oc:hover {
     background: #3e0025;
+}
+
+.credit{
+    background-color: #3e0025;
+    color: #ff70a8;
+    margin: 1vw;
+    padding: .3vw;
+    border-radius: 8px;
 }
