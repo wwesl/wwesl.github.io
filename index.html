@@ -6,51 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Koriis Toyhouse</title>
 
+	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/cc7ef3d06d.js" crossorigin="anonymous"></script>
-	<style>
-		body {
-			scroll-behavior: smooth;
-			color: #efe;
-			max-width: 800px;
-			background: fixed center no-repeat url(https://f2.toyhou.se/file/f2-toyhou-se/images/89221887_IWUx3jVDk9DDCJp.png);
-			background-size: cover;
-			/* overflow: hidden; */
-			font-size: 14px;
-			font-family: monospace;
-		}
 
-		header {
-			font-size: 50px;
-			font-family: monospace;
-			color: #f06;
-		}
-
-		header, .frame {
-			background: linear-gradient(#0993, #0237, #f036);
-			border-radius: 6px;
-			box-shadow: 0px 5px 12px #0008;
-			outline-style: solid;
-			outline-width: 2px;
-			outline-color: #ccc;
-			outline-offset: 2px;
-			padding: 4% 1% 4% 3%;
-			margin: 10% 0px 10% 20px;
-		}
-
-		.oc {
-			font-size: 20px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin: 12px;
-		}
-		
-		#profile-basic-info {
-			display: flex;
-			align-items: center;
-			gap: 25px;
-		}
-	</style>
+    <meta name="theme-color" content="#FF0060">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="My Title">
+    <meta property="og:site_name" content="stuff">
+    <meta property="og:url" content="https://wwesl.github.io/wwesl.github.io/">
+    <meta property="og:description" content="
+        # 📋 ~ SERVER RULES ~ ✅
+        ">
+    <meta property="og:image" content="https://pbs.twimg.com/media/HCoBiwDbsAE5llI.jpg">
+    <meta property="og:image:alt" content="Cool preview image">
 </head>
 
 <body>
@@ -89,13 +57,13 @@
 		<div style="display: flex;">
 			<div class="oc">
 				<a href="https://toyhou.se/27846674.korii">
-					<img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/27846674?1718820864" alt="Korii" style="border-radius: 100%; width: 150px;">
+					<img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/27846674?1718820864" alt="Korii OC" title="Korii🐟" style="border-radius: 100%; width: 150px;">
 				</a>
 				<i>Korii🐟</i>
 			</div>
 			<div class="oc">
 				<a href="https://toyhou.se/27846535.ren">
-					<img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/27846535?1718820225" alt="Korii" style="border-radius: 100%; width: 150px;">
+					<img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/27846535?1718820225" alt="Ren OC" title="Ren🍗" style="border-radius: 100%; width: 150px;">
 				</a>
 				<i>Ren🍗</i>
 			</div>
@@ -108,7 +76,7 @@
 		<p>
 			Hello I'm Korii, I am 19 years old and a Computer Science student.<br>
 			I am in the first few months of college, but this website will grow over time as I make my journey through the course.<br>
-
+            <br>
 			↪ 🌙 4 years of coding in LuaU;<br>
 			↪ 🧾 1 year of coding in C#;<br>
 			↪ 🎨 6 years of Digital Art;<br>
@@ -132,14 +100,15 @@
 		</div>
 	</section>
 
-	<section name="credits">
+	<section name="credits" style="display: flex; flex-direction: row; align-items: center;">
 		<!-- <a href="/Prismicodes" class="mt-2 btn btn-primary tooltipster" title="HTML by Prismicodes" style="background-color: #3e0025; color: #ff70a8; border-color: #952055; border-width: 4px; border-radius: 2rem; box-shadow: 0 5px 10px #000; "><i class="fas fa-code"></i> Code</a> -->
-		<a href="https://img.freepik.com/premium-photo/beautiful-sea-deep-ocean-underwater-with-coral-reef-as-background_887552-22895.jpg" title="Background Credit" style="background-color: #3e0025; color: #ff70a8; margin: 5px; padding: 3px;">
+		<a class="credit" href="https://img.freepik.com/premium-photo/beautiful-sea-deep-ocean-underwater-with-coral-reef-as-background_887552-22895.jpg" title="Background Credit">
 			<i class="fas fa-image"></i>
 			background
 		</a>
-        <span>• Developed by @ko5i on Discord • Computer Science Project</span>
-		<br><br><b>🚧 Under Development 🚧</b>
+        <div class="credit">Developed by @ko5i on Discord</div>
+        <div class="credit">Computer Science Project</div>
+		<b class="credit" style="background-color: #620; color:gold">🚧 Under Development 🚧</b>
 	</section>
 
 	<!-- <div class="col-0 m-2 m-auto" title="this is unfinished lol" style="background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/thumbnails/89224053_I6L.png); background-size: cover; background-position: owo; height: 250px; width: 200px; box-shadow: 0 0 10px #000"></div> -->
