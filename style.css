@@ -54,7 +54,8 @@ header, .frame {
 }
 
 .oc:hover {
-    background: #3e0025;
+    /* background: #3e0025; */
+    transform: scale(1.02);
 }
 
 .credit{
@@ -63,4 +64,11 @@ header, .frame {
     margin: 1vw;
     padding: .3vw;
     border-radius: 8px;
+}
+
+.social {
+    color: #f7a;
+}
+.social:hover{
+    transform: scale(1.02);
 }
