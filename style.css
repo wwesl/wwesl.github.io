@@ -31,7 +31,7 @@ header, .frame {
     font-size: 4vw;
     font-family: monospace;
     color: #f06;
-    background: linear-gradient(#000a #0000);
+    background: linear-gradient(90deg, #0002, #0000);
     background-size: cover;
 
     display: flex;
