@@ -1,47 +1,16 @@
-# Parceria UNIFEBE e Prefeitura de Brusque - Jogo Educacional
+# Atividade Prática Supervisionada (APS) - Unifebe
 
-Projeto desenvolvido por acadêmicos da UNIFEBE em parceria com a Prefeitura de Brusque como atividade de curricularização da extensão.
+Este repositório contém o desenvolvimento de um site criado para a APS da UNIFEBE. O objetivo do projeto é aplicar conceitos de desenvolvimento web aprendidos durante o curso.
 
-O jogo educacional é voltado para crianças de 4 a 5 anos de idade, buscando apresentar e ensinar a hístoria e cultura de Brusque de forma divertida, interativa e acessível.
-##
+## Objetivo
+Criar um site funcional utilizando tecnologias web básicas. O conteúdo e as funcionalidades do site serão definidos durante o desenvolvimento do projeto.
 
-## 🟢 Objetivo
-O objetivo do projeto é auxiliar no desenvolvimento infantil por meio da gamificação, utilizando atividades simples e intuitivas relacionadas à história de Brusque.
+## Tecnologias
+- HTML
+- CSS
 
-O projeto busca estimular:
-
-- Coordenação motora;
-- Raciocínio lógico;
-- Atenção e memória;
-- Interação com tecnologia educacional;
-- Aprendizado sobre a história e cultura de Brusque.
-
-Além disso, o projeto aproxima a universidade da comunidade através da curricularização da extensão.
-
-## 🟡 Público-alvo
-
-Crianças de 4 a 5 anos em fase de educação infantil.
-
----
-
-## 🔴 Funcionalidades
-
-- Interface simples e intuitiva;
-- Elementos visuais coloridos e educativos;
-- Interações adaptadas para crianças;
-- Perguntas e atividades sobre a história de Brusque;
-- Feedback visual para acertos e erros.
-
-## 🔴 Tecnologias utilizadas
-
-🔺 HTML  
-🔺 CSS  
-🔺 JavaScript  
-
----
-
-### 🟡 Status do projeto:
+## Status do projeto
 🚧 Em desenvolvimento
 
-##
-*Projeto desenvolvido por **Weslei Nascimento Rossinsky***
+## Autor
+Projeto desenvolvido por Weslei Nascimento Rossinsky para a APS do curso de Sistemas de Informação da UNIFEBE.
