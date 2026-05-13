@@ -4,36 +4,35 @@ Projeto desenvolvido por acadêmicos da UNIFEBE em parceria com a Prefeitura de 
 
 O jogo educacional é voltado para crianças de 4 a 5 anos de idade, buscando apresentar e ensinar a hístoria e cultura de Brusque de forma divertida, interativa e acessível.
 
----
 
-## Objetivo
-O objetivo do projeto é auxiliar no desenvolvimento infantil por meio da gamificação, utilizando atividades simples e intuitivas para estimular:
+## 🟢 Objetivo
+O objetivo do projeto é auxiliar no desenvolvimento infantil por meio da gamificação, utilizando atividades simples e intuitivas relacionadas à história de Brusque.
+
+O projeto busca estimular:
 
 - Coordenação motora;
 - Raciocínio lógico;
-- Reconhecimento de cores e formas;
 - Atenção e memória;
 - Interação com tecnologia educacional;
 - Aprendizado sobre a história e cultura de Brusque.
 
 Além disso, o projeto aproxima a universidade da comunidade através da curricularização da extensão.
 
-## Público-alvo
+## 🟡 Público-alvo
 
 Crianças de 4 a 5 anos em fase de educação infantil.
 
-## Funcionalidades
+## 🔴 Funcionalidades
 
 - Interface simples e intuitiva;
 - Elementos visuais coloridos e educativos;
 - Interações adaptadas para crianças;
-- Atividades educativas;
-- Feedback visual para acertos e erros;
-- Conteúdos relacionados à história de Brusque.
+- Perguntas e atividades sobre a história de Brusque;
+- Feedback visual para acertos e erros.
 
 ---
 
-## Tecnologias utilizadas
+## 🔴 Tecnologias utilizadas
 
 - HTML
 - CSS
@@ -41,7 +40,7 @@ Crianças de 4 a 5 anos em fase de educação infantil.
 
 ---
 
-### Status do projeto:
+### 🟡 Status do projeto:
 🚧 Em desenvolvimento
 
 
