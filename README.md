@@ -41,6 +41,8 @@ Crianças de 5 anos em fase de educação infantil.
 
 ## Status do projeto
 🚧 Em desenvolvimento
+
 ---
+
 ##
 Projeto desenvolvido por **Weslei Nascimento Rossinsky**
