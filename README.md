@@ -34,8 +34,8 @@ Crianças de 4 a 5 anos em fase de educação infantil.
 
 ## 🔴 Tecnologias utilizadas
 
-🔺 HTML
-🔺 CSS
+🔺 HTML\n
+🔺 CSS\n
 🔺 JavaScript
 
 ---
