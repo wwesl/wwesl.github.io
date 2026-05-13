@@ -2,7 +2,7 @@
 
 Projeto desenvolvido por acadêmicos da UNIFEBE em parceria com a Prefeitura de Brusque como atividade de curricularização da extensão.
 
-O jogo educacional é voltado para crianças de aproximadamente 5 anos de idade, buscando estimular o aprendizado de forma divertida, interativa e acessível.
+O jogo educacional é voltado para crianças de 4 à 5 anos de idade, buscando estimular o aprendizado de forma divertida, interativa e acessível.
 
 ---
 
@@ -17,13 +17,9 @@ O objetivo do projeto é auxiliar no desenvolvimento infantil por meio da gamifi
 
 Além disso, o projeto aproxima a universidade da comunidade através da curricularização da extensão.
 
----
-
 ## Público-alvo
 
 Crianças de 5 anos em fase de educação infantil.
-
----
 
 ## Funcionalidades
 
@@ -37,13 +33,14 @@ Crianças de 5 anos em fase de educação infantil.
 
 ## Tecnologias utilizadas
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 ---
 
 ## Status do projeto
 🚧 Em desenvolvimento
-## Autor
+---
+##
 Projeto desenvolvido por **Weslei Nascimento Rossinsky**
