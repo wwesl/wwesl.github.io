@@ -1,0 +1,308 @@
+/*___ var       ______________________________*/
+:root {
+    --tsize-tiny: calc(var(--tsize-med) * .5);
+    --tsize-small: calc(var(--tsize-med) * .7);
+    --tsize-med: calc(2.8vh + 1.3vw);
+    --tsize-big: calc(var(--tsize-med) * 1.15);
+    --tsize-bigger: calc(var(--tsize-med) * 1.5);
+}
+
+@font-face {
+    font-family: 'Andy-Bold';
+    src: url('./font/Andy-Bold.ttf.woff') format('woff'),
+        url('./font/Andy-Bold.ttf.svg#Andy-Bold') format('svg'),
+        url('./font/Andy-Bold.ttf.eot'),
+        url('./font/Andy-Bold.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*___ general   ______________________________*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Andy-Bold;
+
+    pointer-events: none;
+    user-select: none;
+}
+body {
+    background: no-repeat linear-gradient(#228, #114);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    
+    color: white;
+}
+.stat, .frame {
+    background: linear-gradient(-167deg, #057a, #0575);
+    outline: solid #fffb 2px;
+    outline-offset: -4px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 3px 5px 8px #0347;
+}
+
+
+/*___ topbar stats  ___________________________*/
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    gap: 2%;
+}
+.stat {
+    position: relative;
+    padding: 10px;
+    font-size: var(--tsize-med);
+}
+
+
+/*___ upgrades               ____________________*/
+#upgrade-stat {
+    position: fixed;
+    right: 1.5%;
+    top: 2%;
+
+    box-shadow: none;
+    background: linear-gradient(160deg, #fa0d, #da04);
+    outline-style: solid;
+}
+.upgrades-container .frame {
+    background: linear-gradient(160deg, #88ad, #0004);
+    outline-style: dashed;
+    transition: outline-color 0.3s ease-out;
+}
+.upgrades-container {
+    position: fixed;
+    right: 1%;
+    top: 12%;
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.upgrades-container div {
+    position: relative;
+    font-size: var(--tsize-big);
+    margin: 2%;
+    padding: 2%;
+    width: 100%;
+    height: 20vh;
+}
+.upgrades-container strong {
+    grid-area: t;
+    font-size: var(--tsize-med);
+    color: #fe8;
+    content: attr();
+
+    position: absolute;
+    left: 30%;
+    top: 5%;
+}
+.upgrades-container p {
+    grid-area: d;
+    font-size: var(--tsize-small);
+    color: #eeee;
+
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.upgrades-container img {
+    grid-area: i;
+    position: relative;
+    top: 50%;
+    max-width: calc(10vh + 5vw);
+    transform: translate(0, -50%);
+}
+.upgrades-container button {
+    cursor: pointer;
+    pointer-events: all;
+    z-index: -1;
+    border: 0;
+    border-radius: 8px;
+    background-color: #fff0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: background-color 0.1s ease-out;
+}
+.upgrades-container [name="level"] {
+    position: absolute;
+    bottom: 5%;
+    right: 4%;
+    font-size: var(--tsize-med);
+    color: #223e;
+}
+.upgrades-container span {
+    position: absolute;
+    bottom: 4%;
+
+    color: #0af;
+    font-size: var(--tsize-med);
+}
+.upgrades-container button:hover {
+    background-color: #fff5;
+}
+.upgrades-container .cooldown button:hover {
+    background-color: #a55;
+}
+
+
+/*___ clicker            ________________________*/
+#main-clicker-container{
+    position: fixed;
+    left: 23%;
+    top: 38%;
+    transform: translate(-50%, 0);
+}
+#clicker-container{
+    position: relative;
+    transform: translate(0, -10%) rotate(.01deg);
+    transform-origin: center;
+    transition: transform 0.15s ease;
+
+    width: 30vw;
+    height: 48vh;
+}
+#clicker {
+    cursor: pointer;
+    pointer-events: all;
+
+    position: relative;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    
+    background: #0000;
+    border: 0;
+    font-size: var(--tsize-big);
+    color: inherit;
+    text-shadow: 3px 5px 4px #000;
+    text-wrap: nowrap;
+}
+#clicker-fishingrod{
+    position: absolute;
+    left: 60%;
+    top: 67%;
+    width: 35%;
+    transform: translate(0, -70%) rotate(15deg) scaleX(-1);
+}
+#clicker-fishingrod.cooldown {
+    pointer-events: none;
+    opacity: .5;
+}
+#clicker-container:hover{
+    transform: translate(0, -10%) rotate(1deg);
+}
+#clicker.cooldown {
+    pointer-events: none;
+    opacity: .8;
+}
+
+#clicker-bar {
+    position: absolute;
+    background: #0aee;
+    background-size: cover;
+    border: 0;
+    border-radius: 99px;
+    outline: solid #fffa 1.5px;
+    outline-offset: -1px;
+
+    bottom: calc(-10cqh -5cqw);
+    left: 0;
+    height: 5px;
+    width: 110%;
+    transform: translate(0, 5px);
+}
+
+/*___ credits            ________________________*/
+footer {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    width: 50%;
+
+    display: flex;
+    gap: .5%;
+    align-items: center;
+}
+footer .item {
+    pointer-events: all;
+    font-size: var(--tsize-tiny);
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+
+    background-color: #135a;
+    outline: solid #fff6 2px;
+    outline-offset: -4px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 3px 5px 8px #0347;
+}
+footer p.item {
+    background-color: #222a;
+}
+footer a:hover {
+    background-color: #38ad;
+}
+footer i {
+    font-size: calc(var(--tsize-tiny) * .8);
+}
+footer b::after{
+    content: " ●";
+    color: #ddff;
+    font-size: calc(var(--tsize-tiny) * .7);
+}
+
+footer *:not(:empty)::after {
+    content: "...";
+    color: #0000;
+}
+footer *:not(:empty)::before {
+    content: "...";
+    color: #0000;
+}
+
+
+/*___ misc               ________________________*/
+.fc { color: #0af; } /* fc = Fish Currency */
+.fa-cog { color: #fa0; }
+#res {
+    position: fixed;
+    left: 1%;
+    bottom: 4%;
+    font-size: var(--tsize-tiny);
+    color: #aaa6;
+}
+#cleo {
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    width: 50%;
+    transform: translate(0, -50%);
+    z-index: -1;
+}
+#background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -2;
+}
+.cooldown {
+    pointer-events: none;
+}
+.red-outline {
+    outline-color: #f55;
+}
