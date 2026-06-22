@@ -1,0 +1,125 @@
+/* setup */
+
+:root {
+    --primary: #f06;
+    --secondary: #efe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+/* main */
+
+body {
+    scroll-behavior: smooth;
+    background: fixed center no-repeat url(https://f2.toyhou.se/file/f2-toyhou-se/images/89221887_IWUx3jVDk9DDCJp.png);
+    background-size: cover;
+    /* overflow: hidden; */
+
+    color: var(--secondary);
+    font-size: .8vw;
+    font-family: monospace;
+}
+
+main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+        "header header characters"
+        "about about characters"
+        "links links footer"
+        "links links img";
+    grid-template-columns: 35% 35% 12%;
+    grid-template-rows: 26% 26% 12% 20%;
+    gap: 5%;
+    margin: 2% 10% 0 10%;
+}
+
+header, .frame {
+    background: linear-gradient(#0993, #0237, #f036);
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 0 50px 50px #0007;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #ccc;
+    outline-offset: 5px;
+    padding: 2% 5% 2% 4%;
+    margin: 2% 0 2% 0;
+    position: relative;
+}
+
+
+/* specifics */
+
+.oc {
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+}
+
+#profile-basic-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+h1, h2 {
+    color: var(--primary);
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+p {
+    color: var(--secondary);
+    font-size: 1vw;
+    font-weight: normal;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    gap: .7vw;
+}
+
+fa-anchor { font-size: .67vw;}
+.fab, .fas { color: #f7a;}
+a { text-decoration: none;}
+hr { border-color: #f8b;}
+.circle {border-radius: 50%;}
+
+
+/* grid info */
+
+header { grid-area: header;}
+#characters { grid-area: characters;}
+#about { grid-area: about;}
+#links { grid-area: links;}
+footer { grid-area: footer;}
+#img { grid-area: img; width: 240%;}
+
+
+/* quick formatting */
+
+.container-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+
+.pull-right {
+    position: absolute;
+    right: 0;
+}
